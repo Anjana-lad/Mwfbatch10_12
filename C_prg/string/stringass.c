@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-
-
 void reverseString(char str[]){
     int length = strlen(str);
     for (int i = 0; i < length / 2; i++)
@@ -11,8 +9,6 @@ void reverseString(char str[]){
         str[i] = str[length - i -1];
         str[length - i -1] = temp;
     }
-    
-    
 }
 
 void concanetString(char str1[], char str2[]){
@@ -28,9 +24,7 @@ int isPalindrome(char str[]){
             return 0;
         }
     }
-    
-}
-
+} 
 // Function to copy a string
 void copyString(char destination[], char source[]) {
     strcpy(destination, source);
@@ -46,7 +40,6 @@ void charFrequency(char str[]) {
     for (int i = 0; i < strlen(str); i++) {
         frequency[str[i]]++;
     }
-
     printf("Character frequencies:\n");
     for (int i = 0; i < 256; i++) {
         if (frequency[i] > 0 && isprint(i)) {
@@ -95,8 +88,8 @@ int main(){
    {
     printf("\nEnter Operation Menu\n");
     printf("1. Reverse a String\n");
-    printf("2. Concatenet String\n");
-    printf("3. Check for Palindromw\n");
+    printf("2. Concatenate String\n");
+    printf("3. Check for Palindrome\n");
     printf("4. Copy a String\n");
     printf("5. Calculate String Length\n");
     printf("6. Find character frequency\n");

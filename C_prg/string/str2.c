@@ -43,5 +43,4 @@ int main(){
 
   // string reverse
   printf("\n string reverse:%s",strrev(str));
-
 }
