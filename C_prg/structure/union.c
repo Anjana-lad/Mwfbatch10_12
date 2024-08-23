@@ -1,21 +1,12 @@
-// structure and union 
-// syntax:
-/*
-    struct structure_name
-    {
-        data member;
-        data member;
-    }structure variable;
-*/
-
+// union 
 #include<stdio.h>
-struct student{
+union student{
     int rollno;
     char name[20];
     float marks;
 };
 int main(){
-    struct student st[2];
+    union student st[2];
     int i;
     for(i=0;i<2;i++){
         printf("enter rollno:");
