@@ -19,7 +19,7 @@ string compare:strcmp();
 #include<stdio.h>
 #include<string.h>
 int main(){
-    char str[20],str1[20],str3[20];
+    char str[20],str1[20],str3[20],ch[10];
     printf("Enter string1:");
     gets(str);
     printf("Enter string2:");
@@ -39,8 +39,19 @@ int main(){
 //     printf("\n string copy:%s",strcpy(str3,str));
   
   // string concate
-  printf("\n string concatenate:%s",strcat(str,str1));
+  //printf("\n string concatenate:%s",strcat(str,str1));
 
   // string reverse
-  printf("\n string reverse:%s",strrev(str));
+ // printf("\n string reverse:%s",strrev(str));
+  // string compare
+  //printf("\n string compare: %d",strcmp(str,str1));
+
+  //string inside string 
+  printf("Enter string to extract:");
+  //scanf("%s",&ch);
+  gets(ch);
+  printf("\n String inside string:%s",strstr(str1,ch));
+
+  // string set;
+  printf("\n string string set:%s",strset(str1,'s'));
 }
