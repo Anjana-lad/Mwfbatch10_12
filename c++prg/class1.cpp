@@ -31,22 +31,21 @@ classname objectname;
 using namespace std;
 class student{   //student 
     private:
-        int rollno;
+        int rollno;  //data member
         string name;
     public:
-    void get_data(){
+    void get_data(){   // member function
         cout<<"Enter rollno:";
         cin>>rollno;
         cout<<"Enter name:";
         cin>>name;
     }
-    void display(){
+    void display(){   //Mf
         cout<<"Rollno="<<rollno<<endl<<"Name="<<name<<endl;
     }
 };
 int main(){
-    student stud;
+    student stud;   // stud is object of class.
     stud.get_data();
-    stud.display();
-    
+    stud.display(); 
 }
