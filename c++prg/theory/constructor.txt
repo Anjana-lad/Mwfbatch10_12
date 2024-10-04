@@ -29,3 +29,9 @@ Destructor doesn't have any return type.
 It does not take any parameter.
 Destructor cannot be overloaded.
 It frees the memory of an object whenever it goes out of scope.
+
+
+constructor:
+1. WAP to using constructor to multiply 3 numbers.
+2. WAP to to print fibonacci series using Parameterized constructor.
+3. 
