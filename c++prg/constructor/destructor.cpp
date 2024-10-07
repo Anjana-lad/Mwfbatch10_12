@@ -23,6 +23,5 @@ int main(){
     cin>>a;
     cube cb1(a);  // user defined
     cout<<"Cube of number="<<cb1.show()<<endl;
-
     cout<<"Calling destructor"<<endl;
 }
